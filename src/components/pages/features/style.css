@@ -1,0 +1,126 @@
+.feature-hero {
+  background-color: var(--secondary-bg-color);
+  margin: 20px 0;
+  .text-wrap {
+    padding: 120px 0;
+    text-align: center;
+    h1 {
+      font-size: 48px;
+      color: var(--font-color-primary);
+      font-family: alice;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 20px;
+      color: var(--light-color);
+      font-family: alice;
+    }
+  }
+}
+.features-keyf{
+  padding: 40px 20px;
+  h2{
+    font-size: 32px;
+    color: var(--font-color-primary);
+    font-family: marko;
+    margin-bottom: 8px;
+  }
+  p{
+    font-size: 16px;
+    color: var(--light-color);
+    font-family: alice;
+  }
+  .fkf-boxwrap{
+    margin: 50px 20px;
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .fkf-box{
+      width: 250px;
+      aspect-ratio: 1/1;
+      rotate: 45deg;
+      background: linear-gradient(0deg,
+      #22222200 10%,
+      #b4790c);
+      display: grid;
+      place-items: center;
+      border-radius: 50px;
+      p{
+        rotate: -45deg;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 900px) {
+  .features-keyf {
+    .fkf-boxwrap {
+      gap: 20px;
+      .fkf-box {
+        width: 200px;
+        p {
+          rotate: -45deg;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .features-keyf {
+    .fkf-boxwrap {
+      gap: 35px;
+      .fkf-box {
+        width: 160px;
+        p {
+          rotate: -45deg;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .feature-hero {
+    .text-wrap {
+      h1 {
+        font-size: clamp(1.3rem, 1.1241rem + 1.3793vw, 2rem);
+      }
+      p {
+        font-size: clamp(0.8rem, 0.6241rem + 0.3793vw, 1rem);
+      }
+    }
+  }
+  .features-keyf {
+    padding:20px 12px;
+    .fkf-boxwrap {
+      margin: 40px 12px;
+      gap: 20px;
+      .fkf-box {
+        width: 120px;
+        border-radius: 30px;
+        p {
+          font-size: 12px;
+          rotate: -45deg;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+}

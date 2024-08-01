@@ -1,0 +1,392 @@
+/*---------------------about-hero-------------------------------*/
+.abt-hero {
+  background-color: var(--secondary-bg-color);
+  margin: 20px 0;
+  .text-wrap {
+    padding: 180px 0;
+    text-align: center;
+    h1 {
+      font-size: 48px;
+      color: var(--font-color-primary);
+      font-family: alice;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 20px;
+      color: var(--light-color);
+      font-family: alice;
+    }
+  }
+}
+/*---------------------about mission----------------------------*/
+.abt-mission {
+  width: 100%;
+  margin: 60px 0;
+  h2 {
+    font-size: 36px;
+    color: var(--font-color-primary);
+    font-family: marko;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  .mission-wrap {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 40px;
+    .m-left {
+      ul {
+        list-style: none;
+        li {
+          position: relative;
+          padding-left: 30px;
+          &::before {
+            content: "•"; /* Custom bullet character */
+            position: absolute;
+            left: 0;
+            color: white; /* Bullet color */
+            font-size: 24px; /* Size of the bullet */
+            line-height: 1;
+          }
+          p {
+            font-size: 16px;
+            line-height: 140%;
+            color: var(--light-color);
+            font-family: alice;
+          }
+        }
+      }
+    }
+    .m-right {
+      .mr-circle {
+        width: 350px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: var(--tertiary-bg-color);
+        border: 2px solid black;
+        filter: drop-shadow(0px 0px 10px #09f7e8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        align-items: center;
+        h3 {
+          font-size: 26px;
+          width: 300px;
+          color: var(--font-color-aqua);
+          line-height: 120%;
+          font-family: marko;
+          text-align: center;
+        }
+        p {
+          width: 300px;
+          font-size: 16px;
+          color: var(--light-color);
+          font-family: alice;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------about vision-----------------------------*/
+.abt-vision {
+  margin-bottom: 60px;
+  background-color: var(--secondary-bg-color);
+  padding: 40px;
+  h2 {
+    font-size: 36px;
+    color: var(--font-color-primary);
+    font-family: marko;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  .vision-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    .vision-card {
+      height: 400px;
+      width: 300px;
+      padding: 8px;
+      background-color: var(--tertiary-bg-color);
+      border-radius: 16px;
+      img {
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      h3 {
+        font-size: 24px;
+        color: var(--light-color);
+        font-family: marko;
+        margin: 18px 0;
+        text-align: center;
+      }
+      p {
+        font-size: 18px;
+        color: var(--light-color);
+        font-family: alice;
+        text-align: center;
+      }
+    }
+  }
+}
+/*----------------------about story-----------------------------*/
+.abt-story {
+  height: 480px;
+  margin-bottom: 60px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  .h2-wrap {
+    .h2{
+      width: 200px;
+      aspect-ratio: 1/1;
+      border: 2px solid var(--font-color-primary);
+      display: flex;
+      transform: rotate(45deg) translate3d(
+        20px,
+        -50px,
+        0
+      );
+      align-items: center;
+      box-shadow: -8px 8px 2px var(--font-color-primary);
+      h2{
+        font-size: 48px;
+        color: var(--font-color-primary);
+        font-family: marko;
+        text-align: center;
+        line-height: 120%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .story-wrap{
+    p{
+      font-size: 20px;
+      color: var(--light-color);
+      font-family: alice;
+      line-height: 140%;
+    }
+    .story-card-wrap{
+      margin: 40px 0;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      .story-card{
+        background-color: var(--tertiary-bg-color);
+        padding: 20px 40px;
+        text-align: center;
+        h3{
+          font-size: 16px;
+          color: var(--font-color-primary);
+          font-family: marko;
+        }
+      }
+    }
+  }
+}
+/*----------------------about team-----------------------------*/
+.abt-team{
+  padding: 24px;
+  background-color: var(--secondary-bg-color);
+  margin-bottom: 60px;
+  h2{
+    font-size: 36px;
+    color: var(--font-color-primary);
+    font-family: marko;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  .team-wrap{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    justify-items: center;
+    .team-card{
+      height: auto;
+      width: 160px;
+      padding: 12px;
+      background-color: var(--tertiary-bg-color);
+      border-radius: 16px;
+      img{
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+      h3{
+        font-size: 20px;
+        color: var(--font-color-primary);
+        font-family: marko;
+        margin: 12px 0;
+        text-align: center;
+      }
+      p{
+        font-size: 16px;
+        color: var(--light-color);
+        font-family: alice;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 900px) {
+  /*--------------------abt mission-------------*/
+  .abt-mission {
+    .mission-wrap {
+      .m-right {
+        .mr-circle {
+          width: 300px;
+          h3 {
+            font-size: 20px;
+            width: 250px;
+          }
+          p {
+            font-size: 14px;
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+  /*--------------------abt vision--------------*/
+  .abt-vision {
+    padding: 40px 20px;
+    .vision-wrap {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      .vision-card{
+        width: 200px;
+        height: 300px;
+        h3{
+          font-size: 16px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  /*--------------------abt story---------------*/
+  .abt-story {
+    gap: 90px;
+    .h2-wrap{
+      .h2{
+        width: 150px;
+        h2{
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:720px) {
+  .abt-story{
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    .h2-wrap{
+      .h2{
+        width: auto;
+        height: fit-content;
+        aspect-ratio: auto;
+        transform: none;
+        border: none;
+        box-shadow: none;
+        h2{
+          font-size: 40px;
+          transform: none;
+        }
+      }
+    }
+    .story-wrap{
+      text-align: center;
+      p{
+        font-size: 16px;
+      }
+      .story-card-wrap{
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+
+  /*------------------about-hero------------*/
+  .abt-hero {
+    .text-wrap {
+      padding: 120px 20px;
+      h1 {
+        font-size: 36px;
+        margin-bottom: 12px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  /*--------------------abt mission---------*/
+  .abt-mission {
+    .mission-wrap {
+      flex-direction: column-reverse;
+      gap: 60px;
+      .m-right {
+        .mr-circle {
+          width: 280px;
+          h3 {
+            font-size: 16px;
+            width: 220px;
+          }
+          p {
+            font-size: 14px;
+            width: 240px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .abt-team{
+    padding: 8px;
+    .team-wrap{
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      .team-card{
+      height: auto;
+      width: 140px;
+      padding: 12px;
+      background-color: var(--tertiary-bg-color);
+      border-radius: 16px;
+      img{
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+      h3{
+        font-size: 20px;
+        color: var(--font-color-primary);
+        font-family: marko;
+        margin: 12px 0;
+        text-align: center;
+      }
+      p{
+        font-size: 16px;
+        color: var(--light-color);
+        font-family: alice;
+        text-align: center;
+      }
+    }
+    }
+  }
+}
