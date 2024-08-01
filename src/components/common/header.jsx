@@ -46,8 +46,22 @@ const Header = () => {
         <i className="fas fa-search"></i>
       </div>
       <div className="cta-buttons">
-        <button className="login">Login</button>
-        <button className="signup">Signup</button>
+        <button
+          className="login"
+          onClick={() => {
+            window.location.href = "/login";
+          }}
+        >
+          Login
+        </button>
+        <button
+          className="signup"
+          onClick={() => {
+            window.location.href = "/registration";
+          }}
+        >
+          Signup
+        </button>
       </div>
       <div
         className={`hamburger ${isActive ? "active" : ""}`}
