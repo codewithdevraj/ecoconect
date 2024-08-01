@@ -44,6 +44,13 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
+  button{
+    transition: all 0.1s ease-out;
+    &:active{
+      transform: scale(0.95);
+    }
+  }
+  
 }
 button {
   outline: none;
@@ -121,6 +128,28 @@ nav {
     font-size: 16px;
     font-family: marko;
     color: var(--font-color-primary);
+    position: relative;
+    z-index: 1;
+
+    &::before{
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      background-color: var(--font-color-primary);
+      transform: scaleX(0);
+      /* transform-origin: left; */
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+
+    }
+    &:hover::before{
+      transform: scaleX(1);
+      opacity: 1;
+
+    }
   }
 }
 
