@@ -5,7 +5,7 @@ const LoginForm = () => {
        <section className="formbody">
          <div className="container">
       <p className="header">Login Form</p>
-      <form action="#" className="form">
+      <form className="form">
         <div className="input-box">
           <label>Email Address</label>
           <input type="email" placeholder="Enter email address" required />
@@ -25,13 +25,13 @@ const LoginForm = () => {
             <p>
                 Didn't remember your password?
             </p>
-            <a href="/forget">Forget Password?</a>
+            <a href="/resetpasswod">Forget Password?</a>
           </div>
         </div>
       </form>
     </div>
        </section>
-    )
-}
+    );
+};
 
 export default LoginForm;

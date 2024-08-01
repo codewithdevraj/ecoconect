@@ -5,7 +5,6 @@
   justify-content: center;
   padding: 40px 0;
   align-items: center;
-  min-height: 100vh;
 
   .container {
     position: relative;
@@ -15,7 +14,8 @@
     /* border: 2px solid var(--font-color-primary); */
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 0 40px rgba(246, 136, 2, 0.525);
+    box-shadow: -16px -16px 0px rgba(224, 163, 88, 0.525);
+    border: 1px solid var(--font-color-primary);
   }
   .container .header {
     font-size: 1.5rem;
