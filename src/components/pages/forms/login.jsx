@@ -4,7 +4,7 @@ const LoginForm = () => {
     return(
        <section className="formbody">
          <div className="container">
-      <header>Login Form</header>
+      <p className="header">Login Form</p>
       <form action="#" className="form">
         <div className="input-box">
           <label>Email Address</label>
@@ -19,7 +19,7 @@ const LoginForm = () => {
         <div className="help-btn">
           <div className="signupref">
             <p>Don't have an account?</p>
-            <a href="">Create account</a>
+            <a href="/registration">Create account</a>
           </div>
           <div className="forget">
             <p>
