@@ -54,8 +54,85 @@
     }
   }
 }
+.features-tab {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    border: 5px solid var(--info-color);
+    border-top: 8px solid var(--font-color-primary);
+    border-bottom: 8px solid var(--font-color-primary);
+    padding: 12px;
+    /* border: 2px solid var(--info-color); */
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+  }
 
+  .tabs {
+    display: flex;
+    overflow-x: auto;
+    background-color: var(--secondary-bg-color);
+    padding: 10px;
+    white-space: nowrap;
+  }
 
+  .tab {
+    background-color: var(--tertiary-bg-color);
+    color: var(--light-color);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+    &:hover {
+      background-color: var(--success-color);
+    }
+  }
+
+  .tab.active {
+    background-color: var(--font-color-primary);
+    color: var(--light-color);
+  }
+
+  .content {
+    flex: 1;
+    border-radius: 20px;
+    margin-top: 20px;
+    h2 {
+      margin-bottom: 20px;
+      font: 36px marko;
+      color: var(--font-color-primary);
+      text-align: center;
+    }
+    p{
+      font: 20px alice;
+      color: var(--light-color);
+      text-align: center;
+    }
+  }
+
+  .content ul {
+    margin: 60px 40px;
+    height: 180px;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .content ul li {
+    margin: 15px 0;
+    padding: 16px 20px;
+    background-color: var(--tertiary-bg-color);
+    color: var(--light-color);
+  }
+}
 
 
 
@@ -120,7 +197,49 @@
       }
     }
   }
+  .features-tab {
+  padding: 40px 20px;
+  .container {
+    border: 2px solid var(--info-color);
+    border-top: 5px solid var(--font-color-primary);
+    border-bottom: 5px solid var(--font-color-primary);
+    width: 100%;
+  }
+  .content {
+    h2 {
+      font: 24px marko;
+    }
+    p{
+      font: 16px alice;
+    }
+  }
+
+  .content ul {
+    margin: 60px 0px;
+    height: 180px;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .content ul li {
+    margin: 15px 0;
+    padding: 16px 20px;
+    background-color: var(--tertiary-bg-color);
+    color: var(--light-color);
+  }
+}
 }
 
 @media screen and (max-width: 420px) {
 }
+
+@media (max-width: 768px) {
+      .tabs {
+        padding: 5px;
+      }
+
+      .tab {
+        padding: 10px;
+        margin: 2px;
+      }
+    }
