@@ -9,8 +9,8 @@ const JoinUs = () => {
         Connect with a global network of changemakers and start collaborating on
         projects that make a difference.
       </p>
-      <Link to="/community" className="join">
-        <button class="join">Get Started</button>
+      <Link to="/community" className="">
+        <button className="join">Get Started</button>
       </Link>
     </section>
   );

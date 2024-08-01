@@ -5,6 +5,8 @@ import { useLocation } from "react-router-dom";
 import Homepage from "../components/pages/homepage";
 import Features from "../components/pages/features";
 import About from "../components/pages/aboutus";
+// import RegistrationForm from "../components/pages/forms/registration";
+// import LoginForm from "../components/pages/forms/login";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -27,9 +29,12 @@ function RouteMain() {
             <p>Page not found</p>
           </div>
         } />
+        <Route path="/" element={ <Homepage /> } />
         <Route path="/home" element={ <Homepage /> } />
         <Route path="/features" element={ <Features /> } />
         <Route path="/about" element={ <About /> } />
+        {/* <Route path="/registration" element={ <RegistrationForm /> } />
+        <Route path="/login" element={ <LoginForm /> } /> */}
       </Routes>
     </BrowserRouter>
   );
