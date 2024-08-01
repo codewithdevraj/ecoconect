@@ -7,6 +7,8 @@ import Features from "../components/pages/features";
 import About from "../components/pages/aboutus";
 import RegistrationForm from "../components/pages/forms/registration";
 import LoginForm from "../components/pages/forms/login";
+import OtpGen from "../components/pages/forms/otp";
+import ChangePassword from "../components/pages/forms/passreset";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -35,6 +37,8 @@ function RouteMain() {
         <Route path="/about" element={ <About /> } />
         <Route path="/registration" element={ <RegistrationForm /> } />
         <Route path="/login" element={ <LoginForm /> } />
+        <Route path="/resetpasswod" element={ <OtpGen /> } />
+        <Route path="/changepassword" element={ <ChangePassword /> } />
       </Routes>
     </BrowserRouter>
   );

@@ -5,7 +5,7 @@ const RegistrationForm = () => {
     <section className="formbody">
       <section className="container">
         <p className="header">Registration Form</p>
-        <form action="#" className="form">
+        <form className="form">
           <div className="input-box">
             <label>Full Name</label>
             <input type="text" placeholder="Enter full name" required />
