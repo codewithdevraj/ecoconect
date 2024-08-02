@@ -22,7 +22,7 @@ const Events = () => {
           </div>
         ))}
       </div>
-      <a href="/events" className="cta-button">
+      <a href="/community/events" className="cta-button">
         View All Events
       </a>
     </section>

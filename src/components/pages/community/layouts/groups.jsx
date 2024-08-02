@@ -22,7 +22,7 @@ const Groups = () => {
           </div>
         ))}
       </div>
-      <a href="/groups" className="cta-button">
+      <a href="/community/groups" className="cta-button">
         View All Groups
       </a>
     </section>
