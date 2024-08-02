@@ -61,8 +61,8 @@
       border-radius: 20px;
       z-index: 1;
       border-radius: 5px;
-      
-      &::before{
+
+      &::before {
         content: "";
         background-color: var(--font-color-aqua);
         position: absolute;
@@ -72,12 +72,12 @@
         bottom: 0;
         transform: scaleX(0);
         opacity: 0;
-        transition:all 0.8s;
+        transition: all 0.8s;
         transform-origin: left;
         z-index: -1;
         border-radius: 5px;
       }
-      &:hover::before{
+      &:hover::before {
         border: 2px solid var(--font-color-aqua);
         color: var(--success-color);
         transform: scaleX(1);
@@ -92,8 +92,8 @@
       color: var(--font-color-primary);
       border: 2px solid var(--font-color-primary);
       transition: all 0.2s ease-in;
-      &:hover{
-        color:aqua;
+      &:hover {
+        color: aqua;
         scale: 1.09;
         border-color: var(--font-color-primary);
       }
@@ -155,9 +155,9 @@
     align-items: center;
     justify-content: center;
     transform: rotateZ(45deg);
-    transition: all .3s ease-in-out;
-    &:hover{
-      box-shadow:0px 0px 8px 3px var(--font-color-aqua) ;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 8px 3px var(--font-color-aqua);
       border: 2px solid black;
     }
     .key-card-text {
@@ -244,10 +244,8 @@
       align-items: center;
       gap: 30px;
       color: var(--light-color);
-      transition:
-      background-color 0.3s ease-in,
-      ;
-      &:hover{
+      transition: background-color 0.3s ease-in;
+      &:hover {
         background-color: var(--font-color-primary);
       }
       h4 {
@@ -377,7 +375,7 @@
     z-index: 1;
     border-radius: 5px;
 
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       top: 0;
@@ -392,11 +390,11 @@
       background-color: var(--font-color-aqua);
       z-index: -1;
     }
-    &:hover::before{
+    &:hover::before {
       transform: scaleX(1);
       opacity: 1;
+    }
   }
-}
 }
 /*-------------------------------bLOGS----------------------------*/
 .blogs {
@@ -417,7 +415,6 @@
     display: grid;
     border-left: 5px solid rgba(4, 212, 212, 0.837);
     padding: 40px 12px;
-    /*min max auto repeat*/
     grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
     justify-items: center;
     gap: 30px;
@@ -437,8 +434,7 @@
         color: var(--light-color);
       }
       a {
-        padding:
-        10px 20px;
+        padding: 10px 20px;
         background-color: var(--success-color);
         position: absolute;
         right: 20px;
@@ -448,11 +444,10 @@
         color: var(--light-color);
         text-align: end;
       }
-      &:hover{
+      &:hover {
         transform: scale(1.02);
         border-left: 8px solid var(--success-color);
       }
-    
     }
   }
 }
@@ -570,7 +565,7 @@
       gap: 12px;
       .blogcard {
         width: 300px;
-        height: auto;
+        height: 160px;
         h3 {
           font-size: 20px;
           font-family: alice;
