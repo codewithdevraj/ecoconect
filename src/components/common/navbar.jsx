@@ -2,14 +2,14 @@ const Navbar = () => {
   return (
     <nav className="">
       <div className="navlinks" id="navlinks">
-        <a href="home">Home</a>
-        <a href="about">About</a>
-        <a href="features">Feature</a>
-        <a href="partners">Partners</a>
-        <a href="resources">Resources</a>
-        <a href="community">Community</a>
-        <a href="blogs">Blog</a>
-        <a href="contactus">Contact Us</a>
+        <a href="/home">Home</a>
+        <a href="/about">About</a>
+        <a href="/features">Feature</a>
+        <a href="/partners">Partners</a>
+        <a href="/resources">Resources</a>
+        <a href="/community">Community</a>
+        <a href="/blogs">Blog</a>
+        <a href="/contactus">Contact Us</a>
       </div>
     </nav>
   );
