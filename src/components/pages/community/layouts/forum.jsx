@@ -25,7 +25,7 @@ const Forum = () => {
           </div>
         ))}
       </div>
-      <a href="/forums" className="cta-button">
+      <a href="/community/forums" className="cta-button">
         View All Forums
       </a>
     </section>
