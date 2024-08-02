@@ -15,6 +15,10 @@ const RegistrationForm = () => {
             <label>Email Address</label>
             <input type="text" placeholder="Enter email address" required />
           </div>
+          <div className="input-box">
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" required />
+          </div>
 
           <div className="column">
             <div className="input-box">
@@ -46,11 +50,7 @@ const RegistrationForm = () => {
           <div className="input-box address">
             <label>Address</label>
             <input type="text" placeholder="Enter street address" required />
-            <input
-              type="text"
-              placeholder="Enter street address line 2"
-              required
-            />
+            <input type="text" placeholder="Enter street address line 2" />
             <div className="column">
               <div className="select-box">
                 <select>
