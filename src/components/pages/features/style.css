@@ -50,6 +50,7 @@
       p{
         rotate: -45deg;
         text-align: center;
+        user-select: none;
       }
     }
   }
