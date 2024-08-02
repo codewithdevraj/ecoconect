@@ -5,7 +5,9 @@ const EventList = () => {
     <section className="events">
       <h2>Upcoming Events</h2>
       <div className="event-list">
-        {events.map((event, index) => (
+        {events
+          .slice(0,5)
+          .map((event, index) => (
           <div key={index} className="event-card">
             <h3>{event.title}</h3>
             <p>{event.details}</p>

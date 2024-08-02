@@ -1,0 +1,77 @@
+[
+  {
+    "id": "forum001",
+    "title": "Sustainable Energy Solutions",
+    "description": "Discuss the latest advancements in sustainable energy."
+  },
+  {
+    "id": "forum002",
+    "title": "Waste Management Innovations",
+    "description": "Share ideas on innovative waste management techniques."
+  },
+  {
+    "id": "forum003",
+    "title": "Climate Action Strategies",
+    "description": "Explore strategies for effective climate action."
+  },
+  {
+    "id": "forum004",
+    "title": "Water Conservation Techniques",
+    "description": "Discuss methods and technologies for conserving water resources."
+  },
+  {
+    "id": "forum005",
+    "title": "Sustainable Agriculture Practices",
+    "description": "Share practices and solutions for sustainable farming."
+  },
+  {
+    "id": "forum006",
+    "title": "Green Building Standards",
+    "description": "Explore standards and innovations in eco-friendly building practices."
+  },
+  {
+    "id": "forum007",
+    "title": "Plastic Pollution Solutions",
+    "description": "Discuss approaches to reducing and managing plastic pollution."
+  },
+  {
+    "id": "forum008",
+    "title": "Renewable Energy Technologies",
+    "description": "Share advancements and research in renewable energy technologies."
+  },
+  {
+    "id": "forum009",
+    "title": "Biodiversity Conservation",
+    "description": "Discuss strategies for protecting and restoring biodiversity."
+  },
+  {
+    "id": "forum010",
+    "title": "Circular Economy Practices",
+    "description": "Explore the principles and practices of a circular economy."
+  },
+  {
+    "id": "forum011",
+    "title": "Climate Resilience Building",
+    "description": "Discuss methods for building resilience against climate change impacts."
+  },
+  {
+    "id": "forum012",
+    "title": "Sustainable Urban Development",
+    "description": "Share ideas and projects focused on sustainable urban planning and development."
+  },
+  {
+    "id": "forum013",
+    "title": "Eco-Friendly Transportation",
+    "description": "Discuss innovations and solutions for green transportation."
+  },
+  {
+    "id": "forum014",
+    "title": "Green Finance Initiatives",
+    "description": "Explore financial strategies and investments in green and sustainable projects."
+  },
+  {
+    "id": "forum015",
+    "title": "Environmental Education",
+    "description": "Discuss methods and strategies for promoting environmental education and awareness."
+  }
+]

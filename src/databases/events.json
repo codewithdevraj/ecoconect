@@ -3,30 +3,120 @@
     "id": "evtAA001",
     "title": "Sustainability Conference 2024",
     "details": "An international conference focusing on sustainable development goals, green technologies, and innovative practices.",
-    "link": "#"
+    "date": "2024-10-05",
+    "link": "/events/evtAA001",
+    "imgSrc": "https://via.placeholder.com/300x200"
   },
   {
     "id": "evtAA002",
     "title": "Global Clean Energy Summit",
     "details": "A summit dedicated to exploring advancements in clean energy and strategies for global implementation.",
-    "link": "#"
+    "date": "2024-11-15",
+    "link": "/events/evtAA002",
+    "imgSrc": "https://via.placeholder.com/300x200"
   },
   {
     "id": "evtAA003",
     "title": "Environmental Awareness Workshop",
     "details": "A workshop aimed at increasing awareness about environmental issues and promoting sustainable practices.",
-    "link": "#"
+    "date": "2024-12-10",
+    "link": "/events/evtAA003",
+    "imgSrc": "https://via.placeholder.com/300x200"
   },
   {
     "id": "evtAA004",
     "title": "Climate Change Action Week",
     "details": "A week-long event featuring talks, activities, and campaigns focused on combating climate change.",
-    "link": "#"
+    "date": "2025-01-20",
+    "link": "/events/evtAA004",
+    "imgSrc": "https://via.placeholder.com/300x200"
   },
   {
     "id": "evtAA005",
     "title": "Sustainable Business Expo",
     "details": "An expo showcasing businesses and products that are leading the way in sustainability and eco-friendly practices.",
-    "link": "#"
+    "date": "2025-02-28",
+    "link": "/events/evtAA005",
+    "imgSrc": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "evtAA006",
+    "title": "Green Tech Innovations Fair",
+    "details": "A fair highlighting the latest innovations in green technology and sustainable practices.",
+    "date": "2025-03-15",
+    "link": "/events/evtAA006",
+    "imgSrc": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "evtAA007",
+    "title": "Eco-Friendly Lifestyle Seminar",
+    "details": "A seminar discussing ways to adopt an eco-friendly lifestyle and reduce environmental impact.",
+    "date": "2025-04-10",
+    "link": "/events/evtAA007",
+    "imgSrc": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "evtAA008",
+    "title": "Climate Resilience Workshop",
+    "details": "A workshop focused on building resilience to climate change and preparing for environmental challenges.",
+    "date": "2025-05-22",
+    "link": "/events/evtAA008",
+    "imgSrc": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "evtAA009",
+    "title": "Renewable Energy Forum",
+    "details": "A forum for discussing advancements and challenges in renewable energy technologies.",
+    "date": "2025-06-17",
+    "link": "/events/evtAA009",
+    "imgSrc": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "evtAA010",
+    "title": "Biodiversity Conservation Conference",
+    "details": "A conference dedicated to strategies and actions for conserving biodiversity and protecting ecosystems.",
+    "date": "2025-07-14",
+    "link": "/events/evtAA010",
+    "imgSrc": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "evtAA011",
+    "title": "Sustainable Development Goals Summit",
+    "details": "A summit focused on strategies and partnerships to achieve the Sustainable Development Goals.",
+    "date": "2025-08-20",
+    "link": "/events/evtAA011",
+    "imgSrc": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "evtAA012",
+    "title": "Waste Reduction Strategies Workshop",
+    "details": "A workshop on effective strategies for reducing waste and promoting recycling and reuse.",
+    "date": "2025-09-25",
+    "link": "/events/evtAA012",
+    "imgSrc": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "evtAA013",
+    "title": "Green Business Awards Ceremony",
+    "details": "An awards ceremony recognizing businesses and organizations for their commitment to sustainability.",
+    "date": "2025-10-30",
+    "link": "/events/evtAA013",
+    "imgSrc": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "evtAA014",
+    "title": "Urban Sustainability Expo",
+    "details": "An expo showcasing innovative solutions and practices for sustainable urban development.",
+    "date": "2025-11-18",
+    "link": "/events/evtAA014",
+    "imgSrc": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "evtAA015",
+    "title": "Eco-Innovation Challenge",
+    "details": "A competition encouraging creative solutions and innovations in environmental sustainability.",
+    "date": "2025-12-12",
+    "link": "/events/evtAA015",
+    "imgSrc": "https://via.placeholder.com/300x200"
   }
 ]

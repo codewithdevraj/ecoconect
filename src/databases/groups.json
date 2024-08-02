@@ -1,0 +1,72 @@
+[
+  {
+    "id": "grp001",
+    "name": "Green Technology Enthusiasts",
+    "description": "A group for individuals passionate about green technologies and sustainable innovations.",
+    "members": 120,
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "grp002",
+    "name": "Climate Action Advocates",
+    "description": "Join this group to discuss strategies and initiatives focused on climate action and advocacy.",
+    "members": 85,
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "grp003",
+    "name": "Sustainable Agriculture Network",
+    "description": "Connect with experts and enthusiasts in sustainable agriculture practices and innovations.",
+    "members": 95,
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "grp004",
+    "name": "Eco-Friendly Living Community",
+    "description": "A community dedicated to sharing tips and resources for living an eco-friendly lifestyle.",
+    "members": 200,
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "grp005",
+    "name": "Renewable Energy Innovators",
+    "description": "A group for those interested in the latest developments and innovations in renewable energy.",
+    "members": 110,
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "grp006",
+    "name": "Biodiversity Conservationists",
+    "description": "Focus on strategies and actions to conserve biodiversity and protect ecosystems.",
+    "members": 75,
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "grp007",
+    "name": "Waste Reduction Warriors",
+    "description": "Join this group to discuss and promote effective waste reduction and recycling practices.",
+    "members": 130,
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "grp008",
+    "name": "Urban Sustainability Pioneers",
+    "description": "Connect with others interested in sustainable urban development and smart city innovations.",
+    "members": 90,
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "grp009",
+    "name": "Water Conservation Champions",
+    "description": "A group dedicated to promoting water conservation and sustainable water management practices.",
+    "members": 80,
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": "grp010",
+    "name": "Green Business Leaders",
+    "description": "Network with business leaders committed to integrating sustainability into their operations.",
+    "members": 100,
+    "image": "https://via.placeholder.com/300x200"
+  }
+]
