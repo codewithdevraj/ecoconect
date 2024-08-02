@@ -1,8 +1,17 @@
 import './style.css';
+import Featured from './layouts/featured';
+import BlogHero from './layouts/hero';
+import Recent from './layouts/recent';
+import Popular from './layouts/popular';
+import Category from './layouts/category';
 
 const BlogContentSetup = () => {
   return (
     <section class="blog-content">
+      <Recent />
+      <Featured />
+      <Popular />
+      <Category />
 
       {/* <div class="blog-section" id="featured">
         <h2>Featured Posts</h2>
@@ -28,4 +37,15 @@ const BlogContentSetup = () => {
 
     </section>
   );
+};
+
+const Blogs = () => {
+  return (
+    <>
+      <BlogHero />
+      <BlogContentSetup />
+    </>
+  );
 }
+
+export default Blogs;
