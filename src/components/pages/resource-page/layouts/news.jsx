@@ -9,7 +9,7 @@ const NewsList = () => {
           <div key={index} className="news-card">
             <h3>{newsItem.headline}</h3>
             <p>{newsItem.summary}</p>
-            <a href={newsItem.link}>Read More</a>
+            <a href={`/news/${newsItem.id}`}>Read More</a>
           </div>
         ))}
       </div>

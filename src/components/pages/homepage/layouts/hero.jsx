@@ -18,7 +18,7 @@ const Hero = () => {
         <Link to="/community">
           <button className="join">Join Now</button>
         </Link>
-        <Link to="/aboutus">
+        <Link to="/about">
           <button className="learn">Learn More</button>
         </Link>
       </div>

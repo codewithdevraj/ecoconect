@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import posts from "../../../../databases/posts.json";
 import { useState } from "react";
 
@@ -65,12 +66,19 @@ const Category = () => {
       </select>
       <div className="cards-container" id="category-container">
         {filteredPosts.map((post) => (
-          <div className="card" key={post.id}>
-            <img src={post.image} alt={post.title} />
-            <h3>{post.title}</h3>
-            <p>{post.date}</p>
-            <p>{post.description}</p>
-          </div>
+          <Link
+            to={{
+              pathname: `/blogs/${post.id}`,
+              state: { post: post },
+            }}
+          >
+            <div className="card" key={post.id}>
+              <img src={post.image} alt={post.title} />
+              <h3>{post.title}</h3>
+              <p>{post.date}</p>
+              <p>{post.description}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
