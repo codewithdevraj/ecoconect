@@ -1,0 +1,32 @@
+[
+  {
+    "id": "evtAA001",
+    "title": "Sustainability Conference 2024",
+    "details": "An international conference focusing on sustainable development goals, green technologies, and innovative practices.",
+    "link": "#"
+  },
+  {
+    "id": "evtAA002",
+    "title": "Global Clean Energy Summit",
+    "details": "A summit dedicated to exploring advancements in clean energy and strategies for global implementation.",
+    "link": "#"
+  },
+  {
+    "id": "evtAA003",
+    "title": "Environmental Awareness Workshop",
+    "details": "A workshop aimed at increasing awareness about environmental issues and promoting sustainable practices.",
+    "link": "#"
+  },
+  {
+    "id": "evtAA004",
+    "title": "Climate Change Action Week",
+    "details": "A week-long event featuring talks, activities, and campaigns focused on combating climate change.",
+    "link": "#"
+  },
+  {
+    "id": "evtAA005",
+    "title": "Sustainable Business Expo",
+    "details": "An expo showcasing businesses and products that are leading the way in sustainability and eco-friendly practices.",
+    "link": "#"
+  }
+]
