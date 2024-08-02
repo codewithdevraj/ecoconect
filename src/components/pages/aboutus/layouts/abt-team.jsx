@@ -24,7 +24,7 @@ const teamMembers = [
   },
   {
     imgSrc: "/assets/icons/Vector.png",
-    name: "Amrit Kumar",
+    name: "Amrit Pandey",
     role: "Developer",
   },
   {
@@ -34,7 +34,7 @@ const teamMembers = [
   },
   {
     imgSrc: "/assets/icons/Vector.png",
-    name: "Priya Kumar",
+    name: "Priya Kumari",
     role: "Developer",
   },
   {
