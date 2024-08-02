@@ -13,6 +13,7 @@ import Partners from "../components/pages/partners";
 import ResourcePage from "../components/pages/resource-page";
 import Community from "../components/pages/community";
 import Blogs from "../components/pages/blogs";
+import ContactUs from "../components/pages/contactus";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -43,9 +44,8 @@ function RouteMain() {
         <Route path="/resources" element={<ResourcePage />} />
         <Route path="/community" element={<Community />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contactus" element={<ContactUs />} />
         
-
-
         <Route path="/registration" element={ <RegistrationForm /> } />
         <Route path="/login" element={ <LoginForm /> } />
         <Route path="/resetpasswod" element={ <OtpGen /> } />
