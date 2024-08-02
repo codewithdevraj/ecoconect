@@ -17,10 +17,6 @@
     }
   }
 }
-
-
-
-/* Resource Content Section */
 .resource-content {
   padding: 2em 1em;
   /* Articles and News */
@@ -29,7 +25,7 @@
     flex-wrap: wrap;
     gap: 1em;
   }
-  .loadmore{
+  .loadmore {
     display: block;
     background-color: var(--success-color);
     width: fit-content;
@@ -107,7 +103,7 @@
   /* SDGs Section */
   .sdgs-info {
     margin-top: 5em;
-    h2{
+    h2 {
       color: var(--font-color-primary);
       font-size: 36px;
       margin-bottom: 1em;
@@ -125,7 +121,7 @@
     background-color: var(--tertiary-bg-color);
     padding: 1em;
     border-radius: 8px;
-    min-width: 180px;
+    min-width: 200px;
     flex: 1 1 calc(33% - 1em);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
@@ -140,7 +136,7 @@
     margin-bottom: 12px;
     font-family: alice;
   }
-  .sdg-card img{
+  .sdg-card img {
     width: 100%;
     height: auto;
     margin-bottom: 1em;
@@ -149,7 +145,7 @@
   /* Announcements Section */
   .announcements {
     margin-top: 5em;
-    h2{
+    h2 {
       color: var(--font-color-primary);
       font-size: 36px;
       margin-bottom: 12px;
@@ -166,16 +162,17 @@
   .announcement-card {
     background-color: var(--secondary-bg-color);
     padding: 1em;
+    min-width: 240px;
     border-radius: 8px;
     flex: 1 1 calc(50% - 1em);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-left: 8px solid var(--danger-color);
-    h3{
+    h3 {
       color: var(--info-color);
       margin-bottom: 12px;
       font-family: marko;
     }
-    p{
+    p {
       color: #b1b1b1;
       margin-bottom: 12px;
       font-family: alice;
@@ -185,7 +182,7 @@
   /* Events Section */
   .events {
     margin-top: 5em;
-    h2{
+    h2 {
       color: var(--font-color-primary);
       font-size: 36px;
       margin-bottom: 12px;
@@ -204,13 +201,14 @@
     padding: 1em;
     border-radius: 8px;
     flex: 1 1 calc(50% - 1em);
+    min-width: 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    h3{
+    h3 {
       color: var(--font-color-primary);
       margin-bottom: 12px;
       font-family: marko;
     }
-    p{
+    p {
       color: #b1b1b1;
       margin-bottom: 12px;
       font-family: alice;
@@ -222,5 +220,50 @@
     float: right;
     background-color: rgb(80, 196, 157);
     padding: 8px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .resource-hero {
+    padding: 20px;
+    & .text-wrap {
+      h1 {
+        font-size: 36px;
+        color: var(--font-color-primary);
+        font-family: alice;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 16px;
+        color: var(--light-color);
+        font-family: alice;
+      }
+    }
+  }
+  .resource-content{
+    .loadmore{
+      margin-top: 20px;
+    }
+    .news {
+      margin-top: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .resource-content {
+    .announcements,
+    .sdgs-info,
+    .events {
+      h2 {
+        font-size: 24px;
+        margin-bottom: 18px;
+      }
+    }
+    .announcement-card {
+      h3 {
+        font-size: 16px;
+      }
+    }
   }
 }
