@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 const Opportunity = () => {
   return (
     <section className="partnership-opportunities">
@@ -6,15 +6,11 @@ const Opportunity = () => {
       <p>
         Learn how to become a partner and the benefits of joining our network.
       </p>
-      <button>
-        <Link
-          to="/user/partner"
-        >
-          Become a Partner
-        </Link>
-      </button>
+      <Link to="/user/partner">
+        <button>Become a Partner</button>
+      </Link>
     </section>
   );
-}
+};
 
 export default Opportunity;

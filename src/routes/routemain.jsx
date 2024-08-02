@@ -14,6 +14,7 @@ import ResourcePage from "../components/pages/resource-page";
 import Community from "../components/pages/community";
 import Blogs from "../components/pages/blogs";
 import ContactUs from "../components/pages/contactus";
+import Page404 from "../components/pages/page404";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -30,12 +31,7 @@ function RouteMain() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="*" element={
-          <div>
-            <h1>404</h1>
-            <p>Page not found</p>
-          </div>
-        } />
+        <Route path="*" element={ <Page404/> } />
         <Route path="/" element={ <Homepage /> } />
         <Route path="/home" element={ <Homepage /> } />
         <Route path="/features" element={ <Features /> } />
