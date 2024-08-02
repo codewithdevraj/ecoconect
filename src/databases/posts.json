@@ -1,0 +1,152 @@
+[
+  {
+    "id": "post001",
+    "title": "Innovative Green Technologies",
+    "description": "Explore the latest in green technology advancements.",
+    "date": "2024-08-01",
+    "tags": ["technology", "green", "innovation"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": true,
+    "popular": false
+  },
+  {
+    "id": "post002",
+    "title": "Sustainable Agriculture Practices",
+    "description": "Learn about sustainable farming and agriculture techniques.",
+    "date": "2024-07-25",
+    "tags": ["agriculture", "sustainability", "farming"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": false,
+    "popular": true
+  },
+  {
+    "id": "post003",
+    "title": "Renewable Energy Trends",
+    "description": "The latest trends and developments in renewable energy.",
+    "date": "2024-07-20",
+    "tags": ["energy", "renewable", "technology"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": true,
+    "popular": true
+  },
+  {
+    "id": "post004",
+    "title": "Water Conservation Techniques",
+    "description": "Effective techniques for conserving water in daily life.",
+    "date": "2024-07-18",
+    "tags": ["conservation", "water", "sustainability"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": false,
+    "popular": false
+  },
+  {
+    "id": "post005",
+    "title": "Climate Change Mitigation",
+    "description": "Strategies to mitigate the effects of climate change.",
+    "date": "2024-07-15",
+    "tags": ["climate", "mitigation", "environment"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": true,
+    "popular": true
+  },
+  {
+    "id": "post006",
+    "title": "Urban Gardening Tips",
+    "description": "Tips for successful urban gardening.",
+    "date": "2024-07-10",
+    "tags": ["gardening", "urban", "sustainability"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": false,
+    "popular": false
+  },
+  {
+    "id": "post007",
+    "title": "Eco-Friendly Transportation",
+    "description": "Exploring eco-friendly transportation options.",
+    "date": "2024-07-05",
+    "tags": ["transportation", "eco-friendly", "innovation"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": true,
+    "popular": false
+  },
+  {
+    "id": "post008",
+    "title": "Zero Waste Lifestyle",
+    "description": "Adopting a zero waste lifestyle.",
+    "date": "2024-07-01",
+    "tags": ["lifestyle", "zero waste", "sustainability"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": false,
+    "popular": true
+  },
+  {
+    "id": "post009",
+    "title": "Biodiversity Conservation",
+    "description": "Efforts and strategies for conserving biodiversity.",
+    "date": "2024-06-28",
+    "tags": ["biodiversity", "conservation", "environment"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": true,
+    "popular": true
+  },
+  {
+    "id": "post010",
+    "title": "Sustainable Urban Planning",
+    "description": "Innovative approaches to sustainable urban planning.",
+    "date": "2024-06-25",
+    "tags": ["urban planning", "sustainability", "innovation"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": false,
+    "popular": false
+  },
+  {
+    "id": "post011",
+    "title": "Green Building Materials",
+    "description": "Exploring eco-friendly building materials.",
+    "date": "2024-06-20",
+    "tags": ["building", "materials", "eco-friendly"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": true,
+    "popular": true
+  },
+  {
+    "id": "post012",
+    "title": "Waste Reduction Strategies",
+    "description": "Effective strategies for reducing waste.",
+    "date": "2024-06-15",
+    "tags": ["waste reduction", "sustainability", "environment"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": false,
+    "popular": false
+  },
+  {
+    "id": "post013",
+    "title": "Renewable Energy Policies",
+    "description": "Policies promoting the use of renewable energy.",
+    "date": "2024-06-10",
+    "tags": ["renewable energy", "policies", "environment"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": true,
+    "popular": true
+  },
+  {
+    "id": "post014",
+    "title": "Climate Resilience Planning",
+    "description": "Planning for climate resilience and adaptation.",
+    "date": "2024-06-05",
+    "tags": ["climate resilience", "planning", "adaptation"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": false,
+    "popular": false
+  },
+  {
+    "id": "post015",
+    "title": "Sustainable Fashion Trends",
+    "description": "Trends in sustainable and eco-friendly fashion.",
+    "date": "2024-06-01",
+    "tags": ["fashion", "sustainable", "eco-friendly"],
+    "image": "https://via.placeholder.com/300x200",
+    "featured": true,
+    "popular": true
+  }
+]
