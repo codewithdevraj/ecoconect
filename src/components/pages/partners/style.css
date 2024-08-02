@@ -1,0 +1,242 @@
+
+.partners-hero {
+  background-color: var(--secondary-bg-color);
+  margin: 20px 0;
+  .text-wrap {
+    padding: 120px 0;
+    text-align: center;
+    h1 {
+      font-size: 48px;
+      color: var(--font-color-primary);
+      font-family: alice;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 20px;
+      color: var(--light-color);
+      font-family: alice;
+    }
+  }
+}
+
+.current-partners,
+.partnership-opportunities,
+.success-stories,
+.contact-partnerships {
+  padding: 2em 1em;
+  background-color: var(--secondary-bg-color);
+  margin: 1em 0;
+
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--font-color-primary);
+    font-family: marko;
+    margin-bottom: 8px;
+  }
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+
+  .partner-card {
+    background-color: var(--tertiary-bg-color);
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      aspect-ratio: 3/2;
+      margin-bottom: 1em;
+      border-radius: 5px;
+    }
+
+    h3 {
+      color: var(--font-color-primary);
+      margin-bottom: 0.5em;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      color: var(--info-color);
+      margin-bottom: 0.5em;
+      font-size: 24px;
+    }
+    p,
+    ul {
+      color: rgb(195, 192, 192);
+      margin-bottom: 30px;
+    }
+    ul {
+      margin-left: 20px;
+      li {
+        text-align: left;
+      }
+    }
+    a {
+      color: var(--font-color-primary);
+      word-break: break-all;
+    }
+  }
+}
+
+.partnership-opportunities {
+  text-align: center;
+  p {
+    font-size: 20px;
+    color: var(--light-color);
+    font-family: alice;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: var(--font-color-primary);
+    width: auto;
+  }
+}
+
+.success-stories {
+  padding: 1em;
+  max-width: 100vw;
+
+  .carousel {
+    width: 100%;
+
+    .stories {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 5px;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+      .story {
+        background-color: var(--tertiary-bg-color);
+        padding: 0.5em;
+        width: 300px;
+        display: flex;
+        flex: 0 0 300px; /* Prevents the item from shrinking or growing */
+        height: 140px;
+        gap: 12px;
+
+        img {
+          height: 100%;
+          aspect-ratio: 2/3;
+          object-fit: cover;
+        }
+
+        h3 {
+          color: var(--font-color-primary);
+          font-family: marko;
+          margin-bottom: 15px;
+        }
+
+        p {
+          color: var(--light-color);
+          font-family: alice;
+          margin-bottom: 12px;
+        }
+
+        a {
+          color: var(--font-color-aqua);
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+.contact-partnerships {
+  form {
+    display: grid;
+    gap: 1em;
+    max-width: 400px;
+    margin: 0 auto;
+
+    label {
+      color: var(--font-color-primary);
+    }
+    input,textarea {
+        height: 50px;
+        width: 100%;
+        outline: none;
+        font-size: 1rem;
+        color: #a8a8a8;
+        margin-top: 0px;
+        border-radius: 6px;
+        padding: 0 15px;
+    }
+    textarea{
+      padding: 8px;
+      height: 100px;
+      max-height: 120px;
+      min-height: 100px;
+      max-width: 80vw;
+      min-width: 100%;
+    }
+    input,
+    textarea {
+      border-radius: 8px;
+      background-color: var(--tertiary-bg-color);
+      border: none;
+      border-left: 5px solid var(--font-color-primary);
+    }
+
+    button {
+      background-color: #ffa726;
+      color: #121212;
+      border: none;
+      padding: 0.5em 1em;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ffb74d;
+      }
+    }
+  }
+  .contact-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    p{
+      color: var(--font-color-aqua);
+    }
+  }
+}
+
+
+@media screen and (max-width: 630px) {
+  .partners-hero {
+    .text-wrap {
+      padding: 40px 0;
+      text-align: center;
+      h1 {
+        font-size: 32px;
+        margin-bottom: 12px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .partnership-opportunities {
+    padding: 1em;
+    h2{
+      font-size: 20px;
+    }
+    P{
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .success-stories {
+    padding: 5px;
+  }
+}

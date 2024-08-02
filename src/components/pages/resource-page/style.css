@@ -1,0 +1,226 @@
+.resource-hero {
+  background-color: var(--secondary-bg-color);
+  margin: 20px 0;
+  .text-wrap {
+    padding: 120px 0;
+    text-align: center;
+    h1 {
+      font-size: 48px;
+      color: var(--font-color-primary);
+      font-family: alice;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 20px;
+      color: var(--light-color);
+      font-family: alice;
+    }
+  }
+}
+
+
+
+/* Resource Content Section */
+.resource-content {
+  padding: 2em 1em;
+  /* Articles and News */
+  .articles-news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .loadmore{
+    display: block;
+    background-color: var(--success-color);
+    width: fit-content;
+    padding: 8px 16px;
+    margin-top: 60px;
+    font-size: 24px;
+    border-radius: 12px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--light-color);
+  }
+
+  .articles,
+  .news {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .articles {
+    margin-right: 1em;
+  }
+
+  .articles h2,
+  .news h2 {
+    color: var(--font-color-primary);
+    margin-bottom: 1em;
+    font-family: lemon;
+  }
+
+  .article-list,
+  .news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .article-card,
+  .news-card {
+    background-color: #2a2a2a;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .article-card img,
+  .news-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  .article-card h3,
+  .news-card h3 {
+    color: var(--font-color-primary);
+    margin-bottom: 8px;
+    font-family: marko;
+  }
+
+  .article-card p,
+  .news-card p {
+    color: #b8b8b8;
+    margin-bottom: 20px;
+    font-family: alice;
+  }
+
+  .article-card a,
+  .news-card a {
+    color: black;
+    float: right;
+    background-color: rgb(80, 196, 157);
+    padding: 8px;
+  }
+
+  /* SDGs Section */
+  .sdgs-info {
+    margin-top: 5em;
+    h2{
+      color: var(--font-color-primary);
+      font-size: 36px;
+      margin-bottom: 1em;
+      font-family: lemon;
+    }
+  }
+
+  .sdgs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .sdg-card {
+    background-color: var(--tertiary-bg-color);
+    padding: 1em;
+    border-radius: 8px;
+    min-width: 180px;
+    flex: 1 1 calc(33% - 1em);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .sdg-card h3 {
+    color: var(--font-color-primary);
+    margin-bottom: 12px;
+    font-family: marko;
+  }
+  .sdg-card p {
+    color: #b1b1b1;
+    margin-bottom: 12px;
+    font-family: alice;
+  }
+  .sdg-card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  /* Announcements Section */
+  .announcements {
+    margin-top: 5em;
+    h2{
+      color: var(--font-color-primary);
+      font-size: 36px;
+      margin-bottom: 12px;
+      font-family: lemon;
+    }
+  }
+
+  .announcement-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .announcement-card {
+    background-color: var(--secondary-bg-color);
+    padding: 1em;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 1em);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-left: 8px solid var(--danger-color);
+    h3{
+      color: var(--info-color);
+      margin-bottom: 12px;
+      font-family: marko;
+    }
+    p{
+      color: #b1b1b1;
+      margin-bottom: 12px;
+      font-family: alice;
+    }
+  }
+
+  /* Events Section */
+  .events {
+    margin-top: 5em;
+    h2{
+      color: var(--font-color-primary);
+      font-size: 36px;
+      margin-bottom: 12px;
+      font-family: lemon;
+    }
+  }
+
+  .event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .event-card {
+    background-color: #2a2a2a;
+    padding: 1em;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 1em);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    h3{
+      color: var(--font-color-primary);
+      margin-bottom: 12px;
+      font-family: marko;
+    }
+    p{
+      color: #b1b1b1;
+      margin-bottom: 12px;
+      font-family: alice;
+    }
+  }
+
+  .event-card a {
+    color: black;
+    float: right;
+    background-color: rgb(80, 196, 157);
+    padding: 8px;
+  }
+}
