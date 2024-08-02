@@ -7,7 +7,9 @@ const SDGList = () => {
     <section className="sdgs-info">
       <h2>Information on SDGs</h2>
       <div className="sdgs-list">
-        {sdgs.map((sdg, index) => (
+        {sdgs
+          .slice(0,9)
+          .map((sdg, index) => (
           <div key={index} className="sdg-card">
             <Link
               to={{
