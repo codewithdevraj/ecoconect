@@ -1,5 +1,4 @@
 import sdgs from '../../../../databases/Sdgs.json';
-import img from '../../../../assets/images/vision3.png'
 import {Link} from 'react-router-dom'
 
 const SDGList = () => {
@@ -17,7 +16,7 @@ const SDGList = () => {
                 state: { sdg: sdg },
               }}
             >
-              <img src={img} alt={sdg.title} />
+              <img src={sdg.imgSrc} alt={sdg.title} />
               <h3>{sdg.title}</h3>
               <p>{sdg.description}</p>
             </Link>

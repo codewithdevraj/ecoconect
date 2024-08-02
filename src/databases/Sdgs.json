@@ -2,86 +2,103 @@
   {
     "id": "sdgAA001",
     "title": "SDG 1: No Poverty",
-    "description": "End poverty in all its forms everywhere."
+    "description": "End poverty in all its forms everywhere.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA002",
     "title": "SDG 2: Zero Hunger",
-    "description": "End hunger, achieve food security and improved nutrition, and promote sustainable agriculture."
+    "description": "End hunger, achieve food security and improved nutrition, and promote sustainable agriculture.",
+    "imgSrc": ""
   },
   {
     "id": "sdgAA003",
     "title": "SDG 3: Good Health and Well-being",
-    "description": "Ensure healthy lives and promote well-being for all at all ages."
+    "description": "Ensure healthy lives and promote well-being for all at all ages.",
+    "imgSrc": ""
   },
   {
     "id": "sdgAA004",
     "title": "SDG 4: Quality Education",
-    "description": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all."
+    "description": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
+    "imgSrc": ""
   },
   {
     "id": "sdgAA005",
     "title": "SDG 5: Gender Equality",
-    "description": "Achieve gender equality and empower all women and girls."
+    "description": "Achieve gender equality and empower all women and girls.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA006",
     "title": "SDG 6: Clean Water and Sanitation",
-    "description": "Ensure availability and sustainable management of water and sanitation for all."
+    "description": "Ensure availability and sustainable management of water and sanitation for all.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA007",
     "title": "SDG 7: Affordable and Clean Energy",
-    "description": "Ensure access to affordable, reliable, sustainable, and modern energy for all."
+    "description": "Ensure access to affordable, reliable, sustainable, and modern energy for all.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA008",
     "title": "SDG 8: Decent Work and Economic Growth",
-    "description": "Promote sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all."
+    "description": "Promote sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA009",
     "title": "SDG 9: Industry, Innovation, and Infrastructure",
-    "description": "Build resilient infrastructure, promote inclusive and sustainable industrialization, and foster innovation."
+    "description": "Build resilient infrastructure, promote inclusive and sustainable industrialization, and foster innovation.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA010",
     "title": "SDG 10: Reduced Inequalities",
-    "description": "Reduce inequality within and among countries."
+    "description": "Reduce inequality within and among countries.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA011",
     "title": "SDG 11: Sustainable Cities and Communities",
-    "description": "Make cities and human settlements inclusive, safe, resilient, and sustainable."
+    "description": "Make cities and human settlements inclusive, safe, resilient, and sustainable.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA012",
     "title": "SDG 12: Responsible Consumption and Production",
-    "description": "Ensure sustainable consumption and production patterns."
+    "description": "Ensure sustainable consumption and production patterns.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA013",
     "title": "SDG 13: Climate Action",
-    "description": "Take urgent action to combat climate change and its impacts."
+    "description": "Take urgent action to combat climate change and its impacts.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA014",
     "title": "SDG 14: Life Below Water",
-    "description": "Conserve and sustainably use the oceans, seas, and marine resources for sustainable development."
+    "description": "Conserve and sustainably use the oceans, seas, and marine resources for sustainable development.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA015",
     "title": "SDG 15: Life on Land",
-    "description": "Protect, restore, and promote sustainable use of terrestrial ecosystems, manage forests sustainably, combat desertification, and halt and reverse land degradation and halt biodiversity loss."
+    "description": "Protect, restore, and promote sustainable use of terrestrial ecosystems, manage forests sustainably, combat desertification, and halt and reverse land degradation and halt biodiversity loss.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA016",
     "title": "SDG 16: Peace, Justice, and Strong Institutions",
-    "description": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all, and build effective, accountable, and inclusive institutions at all levels."
+    "description": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all, and build effective, accountable, and inclusive institutions at all levels.",
+    "imgSrc":""
   },
   {
     "id": "sdgAA017",
     "title": "SDG 17: Partnerships for the Goals",
-    "description": "Strengthen the means of implementation and revitalize the global partnership for sustainable development."
+    "description": "Strengthen the means of implementation and revitalize the global partnership for sustainable development.",
+    "imgSrc":""
   }
 ]
