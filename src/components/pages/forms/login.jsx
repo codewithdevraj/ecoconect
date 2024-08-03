@@ -19,14 +19,16 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://main-server-ecoconecthub.netlify.app/.netlify/functions/server/login",
+        "http://localhost:3006/.netlify/functions/server/login",
         {
           email,
           password,
         }
       );
       toast.success(res.data.msg); // Show success message
+      console.log(res.data);
     } catch (err) {
+      console.log(err)
       toast.error(err.response.data.msg); // Show error message
     }
   };
