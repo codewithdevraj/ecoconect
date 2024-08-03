@@ -20,7 +20,10 @@ const LoginForm = () => {
     try {
       const res = await axios.post(
         "http://localhost:5000/.netlify/functions/server/login",
-        { email, password }
+        {
+          email,
+          password,
+        }
       );
       toast.success(res.data.msg); // Show success message
     } catch (err) {
