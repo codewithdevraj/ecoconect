@@ -6,13 +6,11 @@ const SDGList = () => {
     <section className="sdgs-info">
       <h2>Information on SDGs</h2>
       <div className="sdgs-list">
-        {sdgs
-          .slice(0,9)
-          .map((sdg, index) => (
+        {sdgs.slice(0, 9).map((sdg, index) => (
           <div key={index} className="sdg-card">
             <Link
               to={{
-                pathname: `/sdgs/${sdg.id}`,
+                pathname: `/resources/sdgs/${sdg.id}`,
                 state: { sdg: sdg },
               }}
             >
@@ -23,7 +21,7 @@ const SDGList = () => {
           </div>
         ))}
       </div>
-      <a href="/sdgs" className="loadmore">
+      <a href="/resources/sdgs" className="loadmore">
         Load more
       </a>
     </section>

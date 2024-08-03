@@ -11,11 +11,11 @@ const EventList = () => {
           <div key={index} className="event-card">
             <h3>{event.title}</h3>
             <p>{event.details}</p>
-            <a href={event.link}>More Info</a>
+            <a href={`/community/events/${event.id}`}>More Info</a>
           </div>
         ))}
       </div>
-      <a href="/events" className="loadmore">
+      <a href="/community/events" className="loadmore">
         Load more
       </a>
     </section>
