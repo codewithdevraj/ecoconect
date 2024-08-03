@@ -29,7 +29,7 @@ const teamMembers = [
   },
   {
     imgSrc: "/assets/icons/Vector.png",
-    name: "Deen Dayal",
+    name: "Deendayal",
     role: "Developer",
   },
   {
