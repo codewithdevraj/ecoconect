@@ -1,19 +1,31 @@
 import React, { useState } from "react";
 import "./index.css";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const LoginForm = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
 
-  const handleLogin = async (e) => {
+  const { email, password } = formData;
+
+  const onChange = (e) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/auth/login", { email, password });
-      console.log(res.data); // Handle success (e.g., save token, redirect)
+      const res = await axios.post(
+        "http://localhost:5000/.netlify/functions/server/login",
+        { email, password }
+      );
+      toast.success(res.data.msg); // Show success message
+      localStorage.setItem("userId", res.data.userId); // Store user id in local storage
     } catch (err) {
-      setError("Invalid Credentials");
+      toast.error(err.response.data.msg); // Show error message
     }
   };
 
@@ -21,29 +33,30 @@ const LoginForm = () => {
     <section className="formbody">
       <div className="container">
         <p className="header">Login Form</p>
-        <form className="form" onSubmit={handleLogin}>
+        <form className="form" onSubmit={handleSubmit}>
           <div className="input-box">
             <label>Email Address</label>
             <input
               type="email"
+              name="email"
+              value={email}
+              onChange={onChange}
               placeholder="Enter email address"
               required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="input-box">
             <label>Password</label>
             <input
               type="password"
+              name="password"
+              value={password}
+              onChange={onChange}
               placeholder="Enter password"
               required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          {error && <p className="error">{error}</p>}
-          <button>Login</button>
+          <button type="submit">Login</button>
           <div className="help-btn">
             <div className="signupref">
               <p>Don't have an account?</p>
@@ -55,6 +68,7 @@ const LoginForm = () => {
             </div>
           </div>
         </form>
+        <ToastContainer />
       </div>
     </section>
   );

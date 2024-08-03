@@ -1,17 +1,19 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./index.css";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     password: "",
-    phone: "",
+    phoneNumber: "",
     birthDate: "",
     gender: "",
-    address: "",
-    address2: "",
+    streetAddress: "",
+    streetAddressLine2: "",
     country: "",
     city: "",
     region: "",
@@ -22,11 +24,11 @@ const RegistrationForm = () => {
     fullName,
     email,
     password,
-    phone,
+    phoneNumber,
     birthDate,
     gender,
-    address,
-    address2,
+    streetAddress,
+    streetAddressLine2,
     country,
     city,
     region,
@@ -35,19 +37,32 @@ const RegistrationForm = () => {
 
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  console.log(formData)
 
-  const onSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       const res = await axios.post(
         "http://localhost:5000/.netlify/functions/server/register",
-        formData
+        {
+          fullName,
+          email,
+          password,
+          phoneNumber,
+          birthDate,
+          gender,
+          address: {
+            streetAddress,
+            streetAddressLine2,
+            country,
+            city,
+            region,
+            postalCode,
+          },
+        }
       );
-      console.log(res.data);
+      toast.success(res.data.msg); // Show success message
     } catch (err) {
-      console.error(err.response.data.errors);
+      toast.error(err.response.data.msg); // Show error message
     }
   };
 
@@ -55,7 +70,7 @@ const RegistrationForm = () => {
     <section className="formbody">
       <section className="container">
         <p className="header">Registration Form</p>
-        <form className="form" onSubmit={onSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <div className="input-box">
             <label>Full Name</label>
             <input
@@ -70,7 +85,7 @@ const RegistrationForm = () => {
           <div className="input-box">
             <label>Email Address</label>
             <input
-              type="text"
+              type="email"
               name="email"
               value={email}
               onChange={onChange}
@@ -93,9 +108,9 @@ const RegistrationForm = () => {
             <div className="input-box">
               <label>Phone Number</label>
               <input
-                type="number"
-                name="phone"
-                value={phone}
+                type="text"
+                name="phoneNumber"
+                value={phoneNumber}
                 onChange={onChange}
                 placeholder="Enter phone number"
                 required
@@ -122,8 +137,8 @@ const RegistrationForm = () => {
                   id="check-male"
                   name="gender"
                   value="male"
-                  checked={gender === "male"}
                   onChange={onChange}
+                  checked={gender === "male"}
                 />
                 <label htmlFor="check-male">Male</label>
               </div>
@@ -133,8 +148,8 @@ const RegistrationForm = () => {
                   id="check-female"
                   name="gender"
                   value="female"
-                  checked={gender === "female"}
                   onChange={onChange}
+                  checked={gender === "female"}
                 />
                 <label htmlFor="check-female">Female</label>
               </div>
@@ -143,9 +158,9 @@ const RegistrationForm = () => {
                   type="radio"
                   id="check-other"
                   name="gender"
-                  value="other"
-                  checked={gender === "other"}
+                  value="prefer not to say"
                   onChange={onChange}
+                  checked={gender === "prefer not to say"}
                 />
                 <label htmlFor="check-other">Prefer not to say</label>
               </div>
@@ -155,16 +170,16 @@ const RegistrationForm = () => {
             <label>Address</label>
             <input
               type="text"
-              name="address"
-              value={address}
+              name="streetAddress"
+              value={streetAddress}
               onChange={onChange}
               placeholder="Enter street address"
               required
             />
             <input
               type="text"
-              name="address2"
-              value={address2}
+              name="streetAddressLine2"
+              value={streetAddressLine2}
               onChange={onChange}
               placeholder="Enter street address line 2"
             />
@@ -172,10 +187,10 @@ const RegistrationForm = () => {
               <div className="select-box">
                 <select name="country" value={country} onChange={onChange}>
                   <option hidden>Country</option>
-                  <option>America</option>
-                  <option>Japan</option>
-                  <option>India</option>
-                  <option>Nepal</option>
+                  <option value="America">America</option>
+                  <option value="Japan">Japan</option>
+                  <option value="India">India</option>
+                  <option value="Nepal">Nepal</option>
                 </select>
               </div>
               <input
@@ -197,7 +212,7 @@ const RegistrationForm = () => {
                 required
               />
               <input
-                type="number"
+                type="text"
                 name="postalCode"
                 value={postalCode}
                 onChange={onChange}
@@ -214,6 +229,7 @@ const RegistrationForm = () => {
             </div>
           </div>
         </form>
+        <ToastContainer />
       </section>
     </section>
   );
