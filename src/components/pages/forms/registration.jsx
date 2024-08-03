@@ -42,7 +42,7 @@ const RegistrationForm = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/.netlify/functions/server/register",
+        "https://ecoserver.netlify.app/.netlify/functions/server/register",
         {
           fullName,
           email,
