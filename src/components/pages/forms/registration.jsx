@@ -4,6 +4,18 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+const handleError = (err) => {
+  if (Array.isArray(err.response.data.msg)) {
+    // If the response message is an array, display each error message
+    err.response.data.msg.forEach((error) => {
+      toast.error(error.msg);
+    });
+  } else {
+    // If the response message is a single string, display it directly
+    toast.error(err.response.data.msg);
+  }
+};
+
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -42,7 +54,7 @@ const RegistrationForm = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://main-server-ecoconecthub.netlify.app/.netlify/functions/server/register",
+        "http://localhost:3006/.netlify/functions/server/register",
         {
           fullName,
           email,
@@ -60,9 +72,11 @@ const RegistrationForm = () => {
           },
         }
       );
+      console.log(res.data.msg);
       toast.success(res.data.msg); // Show success message
     } catch (err) {
-      toast.error(err.response.data.msg); // Show error message
+      console.log(err);
+      handleError(err); // Show error message
     }
   };
 
