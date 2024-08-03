@@ -42,22 +42,24 @@ const RegistrationForm = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/.netlify/functions/server/register", {
-        fullName,
-        email,
-        password,
-        phoneNumber,
-        birthDate,
-        gender,
-        address: {
-          streetAddress,
-          streetAddressLine2,
-          country,
-          city,
-          region,
-          postalCode,
-        },
-      });
+        "https://main-server-ecoconecthub.netlify.app/.netlify/functions/server/register",
+        {
+          fullName,
+          email,
+          password,
+          phoneNumber,
+          birthDate,
+          gender,
+          address: {
+            streetAddress,
+            streetAddressLine2,
+            country,
+            city,
+            region,
+            postalCode,
+          },
+        }
+      );
       toast.success(res.data.msg); // Show success message
     } catch (err) {
       toast.error(err.response.data.msg); // Show error message
