@@ -10,11 +10,11 @@ const Articles = () => {
             <img src={article.imgSrc} alt={article.title} />
             <h3>{article.title}</h3>
             <p>{article.description}</p>
-            <a href={`/articles/${article.id}`}>Read More</a>
+            <a href={`/resources/articles/${article.id}`}>Read More</a>
           </div>
         ))}
       </div>
-      <a href="/articles" className="loadmore">
+      <a href="/resources/articles" className="loadmore">
         Load more
       </a>
     </div>

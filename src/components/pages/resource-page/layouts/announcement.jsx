@@ -10,7 +10,7 @@ const AnnouncementList = () => {
           <div key={index} className="announcement-card">
             <Link
               to={{
-                pathname: `/announcements/${announcement.id}`,
+                pathname: `/resources/announcements/${announcement.id}`,
                 state: { announcement: announcement },
               }}
             >
@@ -20,7 +20,7 @@ const AnnouncementList = () => {
           </div>
         ))}
       </div>
-      <a href="/announcements" className="loadmore">
+      <a href="/resources/announcements" className="loadmore">
         Load more
       </a>
     </section>

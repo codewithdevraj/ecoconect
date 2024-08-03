@@ -18,6 +18,10 @@ import Page404 from "../components/pages/page404";
 import ForumsPage from "../components/pages/forums";
 import GroupsPage from "../components/pages/groups";
 import EventsPage from "../components/pages/events-page";
+import ArticlesPage from "../components/pages/articles";
+import AnnouncementsPage from "../components/pages/announcement-page";
+import NewsPage from "../components/pages/newspage";
+import SdgsPage from "../components/pages/sdg-page";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -47,6 +51,10 @@ function RouteMain() {
         <Route path="/community/forums" element={<ForumsPage />} />
         <Route path="/community/groups" element={<GroupsPage />} />
         <Route path="/community/events" element={<EventsPage />} />
+        <Route path="/resources/articles" element={<ArticlesPage />} />
+        <Route path="/resources/announcements" element={<AnnouncementsPage />} />
+        <Route path="/resources/news" element={<NewsPage />} />
+        <Route path="/resources/sdgs" element={<SdgsPage />} />
         
         <Route path="/registration" element={ <RegistrationForm /> } />
         <Route path="/login" element={ <LoginForm /> } />

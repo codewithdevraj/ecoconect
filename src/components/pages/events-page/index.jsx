@@ -4,7 +4,7 @@ import "./style.css"; // Ensure you have the CSS for styling
 const EventsPage = () => {
   return (
     <div className="events-section">
-      <h2>events</h2>
+      <h2>Events</h2>
       <div className="events-container">
         {events.map((event) => (
           <div key={event.id} className="event-card">

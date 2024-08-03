@@ -9,11 +9,11 @@ const NewsList = () => {
           <div key={index} className="news-card">
             <h3>{newsItem.headline}</h3>
             <p>{newsItem.summary}</p>
-            <a href={`/news/${newsItem.id}`}>Read More</a>
+            <a href={`/resources/news/${newsItem.id}`}>Read More</a>
           </div>
         ))}
       </div>
-      <a href="/news" className="loadmore">
+      <a href="/resources/news" className="loadmore">
         Load more
       </a>
     </div>
