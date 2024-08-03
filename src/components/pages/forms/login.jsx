@@ -19,7 +19,7 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/.netlify/functions/server/login",
+        "https://main-server-ecoconecthub.netlify.app/.netlify/functions/server/login",
         {
           email,
           password,
