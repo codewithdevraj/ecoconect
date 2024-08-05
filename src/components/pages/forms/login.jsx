@@ -25,10 +25,13 @@ const LoginForm = () => {
           password,
         }
       );
+      let data = res.data;
+      localStorage.setItem("token", data.token);
       toast.success(res.data.msg); // Show success message
+      window.location.href = "/home";
       console.log(res.data);
     } catch (err) {
-      console.log(err)
+      console.log(err);
       toast.error(err.response.data.msg); // Show error message
     }
   };

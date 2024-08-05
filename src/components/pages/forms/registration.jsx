@@ -72,8 +72,10 @@ const RegistrationForm = () => {
           },
         }
       );
-      console.log(res.data.msg);
-      toast.success(res.data.msg); // Show success message
+      let data = res.data;
+      localStorage.setItem("token", data.token);
+      toast.success(res.data.msg);
+      window.location.href = "/login";
     } catch (err) {
       console.log(err);
       handleError(err); // Show error message
