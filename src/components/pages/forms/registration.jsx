@@ -54,7 +54,7 @@ const RegistrationForm = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3006/.netlify/functions/server/register",
+        "https://main-server-ecoconecthub.netlify.app/.netlify/functions/server/register",
         {
           fullName,
           email,
