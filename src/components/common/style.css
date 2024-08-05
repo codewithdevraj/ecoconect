@@ -52,6 +52,9 @@ header {
       transform: scale(0.95);
     }
   }
+  /* button.hide{
+    display: none;
+  } */
   
 }
 button {
